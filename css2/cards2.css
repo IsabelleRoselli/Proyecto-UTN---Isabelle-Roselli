@@ -1,0 +1,32 @@
+.curiosity-card {
+  background: #111;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(26, 188, 156, 0.3);
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  color: #eee;
+  width: 220px;        
+  min-height: 320px; 
+  margin: 1rem;        
+}
+.curiosity-card img {
+  width: 100px;          
+  height: 100px;        
+  object-fit: cover;    
+  border-radius: 10px;  
+  margin-bottom: 1rem;   
+}
+.curiosity-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(26, 188, 156, 0.6);
+}
+.curiosities-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);  
+  gap: 2rem; 
+  justify-items: center;
+  align-items: stretch;
+  margin: 2rem auto;
+}

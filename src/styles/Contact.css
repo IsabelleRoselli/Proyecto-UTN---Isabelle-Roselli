@@ -3,15 +3,18 @@
   flex-direction: column;
   gap: 1.2rem;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
 }
+
 .form-group label {
   margin-bottom: 0.4rem;
   font-weight: 600;
   color: #1abc9c;
 }
+
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group input[type="tel"],
@@ -26,6 +29,7 @@
   transition: border-color 0.3s ease;
   font-family: 'Roboto', sans-serif;
 }
+
 .form-group input[type="text"]:focus,
 .form-group input[type="email"]:focus,
 .form-group input[type="tel"]:focus,
@@ -35,33 +39,40 @@
   border-color: #16a085;
   background: #111;
 }
+
 .form-group textarea {
   resize: vertical;
   font-family: 'Roboto', sans-serif;
 }
+
 .form-group div {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
+
 .form-group input[type="radio"] {
   margin-right: 0.3rem;
   cursor: pointer;
 }
+
 .form-group label[for^="news-"] {
   cursor: pointer;
   font-weight: 400;
   color: #ccc;
 }
+
 .form-buttons {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
 }
+
 .form-buttons .btn-animated {
   flex: 1;
   text-align: center;
 }
+
 @media (max-width: 768px) {
   .form-buttons {
     flex-direction: column;

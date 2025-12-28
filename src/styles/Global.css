@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #1b3f40 url('https://transparenttextures.com/patterns/elegant-grid.png') repeat;
+  color: #eee;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 80px 15px #1abc9c inset;
+  transition: box-shadow 0.7s;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+}
+
+.section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: rgba(20, 20, 20, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(26, 188, 156, 0.3);
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+  color: #eee;
+}
+
+.section:nth-child(3) { animation-delay: 0.2s; }
+.section:nth-child(4) { animation-delay: 0.4s; }
+.section:nth-child(5) { animation-delay: 0.6s; }
+.section:nth-child(6) { animation-delay: 0.8s; }
+.section:nth-child(7) { animation-delay: 1.0s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  color: #1abc9c;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #ccc;
+}
+
+.btn-animated {
+  background: linear-gradient(45deg, #16a085, #1abc9c);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgba(26, 188, 156, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  user-select: none;
+  margin-top: 1.5rem;
+  text-decoration: none;
+}
+
+.btn-animated:hover {
+  background: linear-gradient(45deg, #138d75, #16a085);
+  box-shadow: 0 8px 20px rgba(22, 160, 133, 0.7);
+  transform: scale(1.05);
+  color: #000;
+}
+
+.btn-animated:active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: ripple 0.6s linear;
+  pointer-events: none;
+}
+
+@keyframes ripple {
+  to {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+}

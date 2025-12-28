@@ -1,12 +1,12 @@
-# El Arte de la Medicina 🩺
+# El Arte de la Medicina
 
 Una aplicación web interactiva que explora curiosidades históricas de la medicina, creada con React y Vite.
 
-## 📋 Descripción
+## Descripción
 
 Este proyecto presenta una colección de datos fascinantes sobre la historia de la medicina, incluyendo curiosidades médicas, una galería de arte médico histórico, y un formulario de contacto interactivo. Creada por Isabelle Roselli, estudiante de Medicina apasionada por la historia y el arte que rodean este oficio.
 
-## ✨ Características
+## Características
 
 - **React + Vite**: Desarrollo moderno con Hot Module Replacement (HMR)
 - **React Router**: Navegación fluida entre páginas sin recargas
@@ -16,7 +16,7 @@ Este proyecto presenta una colección de datos fascinantes sobre la historia de 
 - **Font Awesome**: Iconografía moderna
 - **Diseño Responsivo**: Optimizado para todos los dispositivos
 
-## 🚀 Instalación y Uso
+## Instalación y Uso
 
 ### Prerequisitos
 
@@ -52,7 +52,7 @@ npm run preview
 npm run lint
 ```
 
-## 🚀 Despliegue en GitHub Pages
+## Despliegue en GitHub Pages
 
 Este proyecto está configurado para ser desplegado en GitHub Pages. Para desplegar:
 
@@ -76,9 +76,7 @@ El proyecto incluye la configuración necesaria para GitHub Pages con:
 
 **Nota**: El proyecto usa React Router con `BrowserRouter`, y el sistema de redirección mediante `404.html` asegura que todas las rutas funcionen correctamente en GitHub Pages.
 
-```
-
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 src/
@@ -105,7 +103,7 @@ src/
 └── main.jsx            # Punto de entrada
 ```
 
-## 🎨 Páginas
+## Páginas
 
 ### Home
 Página de bienvenida con imagen principal y botón de exploración.
@@ -136,7 +134,7 @@ Formulario interactivo con campos controlados:
 
 Los datos se capturan con React useState y se registran en la consola al enviar.
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **React 19.2.0**: Biblioteca de UI
 - **React Router DOM 7.1.3**: Enrutamiento
@@ -146,12 +144,12 @@ Los datos se capturan con React useState y se registran en la consola al enviar.
 - **Font Awesome 6.4.0**: Iconos
 - **Google Fonts**: Tipografías (Merriweather, Roboto, Dancing Script)
 
-## 👤 Autora
+## Autora
 
 **Isabelle Roselli**
 - Instagram: [@belleroselli](https://instagram.com/belleroselli)
 - Estudiante de Medicina
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto es de código abierto y está disponible bajo la licencia MIT.

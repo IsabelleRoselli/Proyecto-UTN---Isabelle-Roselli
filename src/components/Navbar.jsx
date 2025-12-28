@@ -8,7 +8,6 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="logo">
           <img src={logo} alt="El arte de la Medicina" />
-          <p></p>
         </div>
         <ul className="nav-links">
           <li>

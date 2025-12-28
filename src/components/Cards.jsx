@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Card from './Card';
 import cards1 from '../assets/img/cards1.jpg';
 import cards2 from '../assets/img/cards2.jpg';
@@ -9,8 +9,6 @@ import cards6 from '../assets/img/cards6.jpg';
 import '../styles/Cards.css';
 
 const Cards = () => {
-  const navigate = useNavigate();
-
   const cardsData = [
     {
       id: 1,
@@ -70,9 +68,9 @@ const Cards = () => {
             />
           ))}
         </div>
-        <button className="btn-animated" onClick={() => navigate('/')}>
+        <Link to="/" className="btn-animated">
           Volver al menú principal
-        </button>
+        </Link>
       </section>
     </main>
   );

@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import galeria1 from '../assets/img/galeria1.jpg';
 import galeria2 from '../assets/img/galeria2.jpg';
 import galeria3 from '../assets/img/galeria3.jpg';
@@ -10,8 +10,6 @@ import galeria8 from '../assets/img/galeria8.jpg';
 import '../styles/Gallery.css';
 
 const Gallery = () => {
-  const navigate = useNavigate();
-
   const galleryImages = [
     {
       id: 1,
@@ -45,7 +43,7 @@ const Gallery = () => {
     },
     {
       id: 6,
-      title: '"La lección de anatomía del Dr.Ruysch" - Jan Van Neck, 1683',
+      title: '"La lección de anatomía del Dr. Ruysch" - Jan Van Neck, 1683',
       image: galeria6,
       alt: 'Imagen histórica 6',
     },
@@ -66,7 +64,7 @@ const Gallery = () => {
   return (
     <main>
       <section id="gallery" className="section gallery-section">
-        <h2></h2>
+        <h2>Galería de Arte Médico</h2>
         <div className="gallery-grid">
           {galleryImages.map((item) => (
             <div key={item.id} className="gallery-item">
@@ -75,9 +73,9 @@ const Gallery = () => {
             </div>
           ))}
         </div>
-        <button className="btn-animated" onClick={() => navigate('/')}>
+        <Link to="/" className="btn-animated">
           Volver al menú principal
-        </button>
+        </Link>
       </section>
     </main>
   );

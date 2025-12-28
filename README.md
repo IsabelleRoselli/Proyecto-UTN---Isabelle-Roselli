@@ -1,4 +1,4 @@
-# El Arte de la Medicina 
+# El Arte de la Medicina
 
 Una aplicación web interactiva que explora curiosidades históricas de la medicina, creada con React y Vite.
 
@@ -51,6 +51,30 @@ npm run preview
 # Ejecutar linter
 npm run lint
 ```
+
+## Despliegue en GitHub Pages
+
+Este proyecto está configurado para ser desplegado en GitHub Pages. Para desplegar:
+
+### Opción 1: Despliegue Manual
+
+1. Construir el proyecto:
+   ```bash
+   npm run build
+   ```
+
+2. El directorio `dist/` contiene los archivos listos para producción
+
+3. Configurar GitHub Pages para servir desde el directorio `dist/` o usar GitHub Actions
+
+### Opción 2: GitHub Actions (Recomendado)
+
+El proyecto incluye la configuración necesaria para GitHub Pages con:
+- Ruta base configurada: `/Proyecto-UTN---Isabelle-Roselli/`
+- Soporte para enrutamiento SPA mediante `404.html`
+- Todos los assets correctamente referenciados
+
+**Nota**: El proyecto usa React Router con `BrowserRouter`, y el sistema de redirección mediante `404.html` asegura que todas las rutas funcionen correctamente en GitHub Pages.
 
 ## Estructura del Proyecto
 
@@ -126,3 +150,6 @@ Los datos se capturan con React useState y se registran en la consola al enviar.
 - Instagram: [@belleroselli](https://instagram.com/belleroselli)
 - Estudiante de Medicina
 
+## Licencia
+
+Este proyecto es de código abierto y está disponible bajo la licencia MIT.

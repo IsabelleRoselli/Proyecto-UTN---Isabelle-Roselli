@@ -9,7 +9,7 @@ import './styles/Global.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Proyecto-UTN---Isabelle-Roselli">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
